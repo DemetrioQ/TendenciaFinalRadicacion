@@ -4581,8 +4581,8 @@
     },
     "Radication/1.0.0": {
       "type": "project",
-      "path": "../src/Radication/Radication.csproj",
-      "msbuildProject": "../src/Radication/Radication.csproj"
+      "path": "../../src/Radication/Radication.csproj",
+      "msbuildProject": "../../src/Radication/Radication.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4600,11 +4600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest.csproj",
+      "projectUniqueName": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest\\RadicationTest.csproj",
       "projectName": "RadicationTest",
-      "projectPath": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest.csproj",
+      "projectPath": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest\\RadicationTest.csproj",
       "packagesPath": "C:\\Users\\DemetrioQ\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\obj\\",
+      "outputPath": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

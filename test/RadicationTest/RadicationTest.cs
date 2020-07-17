@@ -36,11 +36,11 @@ namespace test
             Assert.That(() => new Radicacion(2).DoRadicacion(0), Is.EqualTo(0));
         }
 
-        /*[Test]
-        public void DoRadicacion_With_Any_Number_As_Potency_And_0_As_Value_Returns_0()
+        [Test]
+        public void DoRadicacion_With_Minus2_As_Potency_And_25_As_Value_Returns_025()
         {
-            Assert.That(() => new Radicacion(2).DoRadicacion(0), Is.EqualTo(0));
-        }*/
+            Assert.That(() => new Radicacion(-2).DoRadicacion(16), Is.EqualTo(0.25));
+        }
 
 
 

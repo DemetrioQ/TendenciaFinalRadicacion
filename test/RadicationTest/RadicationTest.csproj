@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Radication\Radication.csproj" />
+    <ProjectReference Include="..\..\src\Radication\Radication.csproj" />
   </ItemGroup>
 
 </Project>

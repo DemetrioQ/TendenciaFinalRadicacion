@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySoxjdZQSI5uPGkvwnrdd+SggGmedfmLqbNGw1x/bJ07m3PlfMn3TxidNe4uRET3tKUpvHuOXBRygm0qdePs7Q==",
+  "dgSpecHash": "KfTsAb91yRB/0D/Di+6tkgQm6ZRTiDqEZK5cDttoQmehXfg4qH07qRm6GELn+SI7nH6eoMoMqk/MTXCE2Vu7ew==",
   "success": true,
-  "projectFilePath": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest.csproj",
+  "projectFilePath": "C:\\Code\\Tendencias Lab\\Examen Final 2\\test\\RadicationTest\\RadicationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DemetrioQ\\.nuget\\packages\\microsoft.codecoverage\\16.4.0\\microsoft.codecoverage.16.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
