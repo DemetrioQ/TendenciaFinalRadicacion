@@ -10,9 +10,12 @@ namespace Radication
             this.potency = potency;
         }
 
-        /*public void DoRadicacion(int number)
+        public void DoRadicacion(int number)
         {
-            
-        }*/
+            if (potency % 2 == 0 && number < 0)
+            {
+                throw new ArgumentException("No puede tener como potencia u nnumero par y sacarle la raiz a un numero positivo");
+            }
+        }
     }
 }
