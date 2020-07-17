@@ -17,5 +17,13 @@ namespace test
         {
             Assert.That(() => new Radicacion(2).DoRadicacion(-2),Throws.ArgumentException);
         }
+
+        [Test]
+        public void DoRadicacion_With_2_As_Potency_And_16_As_Value_Returns_4()
+        {
+            Assert.That(() => new Radicacion(2).DoRadicacion(16), Is.EqualTo(4));
+        }
+
+
     }
 }
