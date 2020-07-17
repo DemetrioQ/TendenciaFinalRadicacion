@@ -4,8 +4,8 @@ namespace Radication
 {
     public class Radicacion
     {
-        public int potency;
-        public Radicacion(int potency)
+        public double potency;
+        public Radicacion(double potency)
         {
             if (potency == 0)
             {
@@ -15,14 +15,14 @@ namespace Radication
             this.potency = potency;
         }
 
-        public double DoRadicacion(int number)
+        public double DoRadicacion(double number)
         {
             if (potency % 2 == 0 && number < 0)
             {
                 throw new ArgumentException("No puede tener como potencia u nnumero par y sacarle la raiz a un numero positivo");
             }
 
-            double answer = Math.Pow((double)number, 1 / (double)potency);
+            double answer = Math.Pow(number, 1 / potency);
 
             return answer;
         }
