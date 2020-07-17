@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using Radication;
+using System.num
 
 namespace test
 {
@@ -37,9 +38,9 @@ namespace test
         }
 
         [Test]
-        public void DoRadicacion_With_Minus2_As_Potency_And_25_As_Value_Returns_025()
+        public void DoRadicacion_With_BigNumbers_Throws_Argument_Exception()
         {
-            Assert.That(() => new Radicacion(-2).DoRadicacion(16), Is.EqualTo(0.25));
+            Assert.That(() => new Radicacion(999999999999999).DoRadicacion(99999999999999999), Throws.ArgumentException);
         }
 
 

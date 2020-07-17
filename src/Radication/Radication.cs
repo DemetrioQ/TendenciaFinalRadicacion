@@ -1,4 +1,5 @@
 using System;
+
 namespace Radication
 {
     public class Radicacion
@@ -21,8 +22,11 @@ namespace Radication
             }
             
             double answer = Math.Pow(number, (double) 1 / potency);
-            
-
+            string s = answer.ToString();
+            if (s.Contains("e") || s.Contains("E"))
+            {
+                throw new ArgumentException("Numbers are too big");
+            }
             return answer;
         }
     }
