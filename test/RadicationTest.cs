@@ -9,13 +9,19 @@ namespace test
         [Test]
         public void Constructor_With_Valid_Potency()
         {
-            Assert.That(() => new Radicacion(2),Throws.Nothing);
+            Assert.That(() => new Radicacion(2), Throws.Nothing);
         }
 
         [Test]
-        public void DoRadicacion_With_Even_Number_As_Pottency_And_Negaty_Number_Throws_Exception()
+        public void Constructor_With_0_As_Potency_Throws_Argument_Exxeptio()
         {
-            Assert.That(() => new Radicacion(2).DoRadicacion(-2),Throws.ArgumentException);
+            Assert.That(() => new Radicacion(0), Throws.ArgumentException);
+        }
+
+        [Test]
+        public void DoRadicacion_With_Even_Number_As_Pottency_And_Negaty_Number_Throws_Argument_Exception()
+        {
+            Assert.That(() => new Radicacion(2).DoRadicacion(-2), Throws.ArgumentException);
         }
 
         [Test]
@@ -30,7 +36,9 @@ namespace test
             Assert.That(() => new Radicacion(2).DoRadicacion(0), Is.EqualTo(0));
         }
 
-        
+
+
+
 
 
 
