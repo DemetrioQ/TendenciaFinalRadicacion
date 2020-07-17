@@ -24,6 +24,18 @@ namespace test
             Assert.That(() => new Radicacion(2).DoRadicacion(16), Is.EqualTo(4));
         }
 
+        [Test]
+        public void DoRadicacion_With_Any_Number_As_Potency_And_0_As_Value_Returns_0()
+        {
+            Assert.That(() => new Radicacion(2).DoRadicacion(0), Is.EqualTo(0));
+        }
+
+        
+
+
+
+
+
 
     }
 }
