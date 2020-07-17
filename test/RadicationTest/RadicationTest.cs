@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using Radication;
-using System.num
+using System;
 
 namespace test
 {
@@ -8,46 +8,48 @@ namespace test
     {
 
         [Test]
-        public void Constructor_With_Valid_Potency()
+        public void DoRadication_With_Valid_Values_Throws_Nothing()
         {
-            Assert.That(() => new Radicacion(2), Throws.Nothing);
+            Assert.That(() => new Radicacion().DoRadicacion("4", "2"), Throws.Nothing);
         }
 
         [Test]
-        public void Constructor_With_0_As_Potency_Throws_Argument_Exxeptio()
+        public void DoRadication_With_0_As_Potency_Throws_Argument_Exxeptio()
         {
-            Assert.That(() => new Radicacion(0), Throws.ArgumentException);
+            Assert.That(() => new Radicacion().DoRadicacion("4", "0"), Throws.ArgumentException);
         }
 
         [Test]
         public void DoRadicacion_With_Even_Number_As_Pottency_And_Negaty_Number_Throws_Argument_Exception()
         {
-            Assert.That(() => new Radicacion(2).DoRadicacion(-2), Throws.ArgumentException);
+            Assert.That(() => new Radicacion().DoRadicacion("-2", "2"), Throws.ArgumentException);
         }
 
         [Test]
         public void DoRadicacion_With_2_As_Potency_And_16_As_Value_Returns_4()
         {
-            Assert.That(() => new Radicacion(2).DoRadicacion(16), Is.EqualTo(4));
+            Assert.That(() => new Radicacion().DoRadicacion("16", "2"), Is.EqualTo(4));
         }
 
         [Test]
         public void DoRadicacion_With_Any_Number_As_Potency_And_0_As_Value_Returns_0()
         {
-            Assert.That(() => new Radicacion(2).DoRadicacion(0), Is.EqualTo(0));
+            Assert.That(() => new Radicacion().DoRadicacion("0", "2"), Is.EqualTo(0));
         }
 
         [Test]
         public void DoRadicacion_With_BigNumbers_Throws_Argument_Exception()
         {
-            Assert.That(() => new Radicacion(999999999999999).DoRadicacion(99999999999999999), Throws.ArgumentException);
+            string number = "999999999999999999999999999";
+
+            Assert.That(() => new Radicacion().DoRadicacion(number, number), Throws.ArgumentException);
         }
 
 
         [Test]
         public void DoRadicacion_With_Minus2_As_Potency_And_25_As_Value_Returns_0_dot_25()
         {
-            Assert.That(() => new Radicacion(-2).DoRadicacion(16), Is.EqualTo(0.25));
+            Assert.That(() => new Radicacion().DoRadicacion("16", "-2"), Is.EqualTo(0.25));
         }
 
 

@@ -7,18 +7,18 @@ namespace Radication
         static void Main(string[] args)
         {
             bool keepgoing = true;
+            Radicacion rad = new Radicacion();
 
             while (keepgoing)
             {
                 Console.Write("Escirba la potencia de la raiz: ");
-                double potencia = Convert.ToDouble(Console.ReadLine());
-                Radicacion rad = new Radicacion(potencia);
+                string potency = Console.ReadLine();
                 Console.Write("Escirba el numero al cual le queire savar la raiz: ");
-                double number = Convert.ToDouble(Console.ReadLine());
+                string number = Console.ReadLine();
 
 
 
-                Console.WriteLine($"Resultado: {rad.DoRadicacion(number)}");
+                Console.WriteLine($"Resultado: {rad.DoRadicacion(number,potency)}");
 
                 Console.Write("Desea sacar la raiz de otro numero? (Y/N): ");
                 string choice = Console.ReadLine().ToLower();
