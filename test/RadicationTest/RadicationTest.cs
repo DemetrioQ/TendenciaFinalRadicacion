@@ -43,6 +43,13 @@ namespace test
         }
 
 
+        [Test]
+        public void DoRadicacion_With_Minus2_As_Potency_And_25_As_Value_Returns_0_dot_25()
+        {
+            Assert.That(() => new Radicacion(-2).DoRadicacion(16), Is.EqualTo(0.25));
+        }
+
+
 
 
 
