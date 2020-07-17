@@ -11,8 +11,22 @@ namespace Radication
 
         public double DoRadicacion(string number_s, string potency_s)
         {
-            double number = Convert.ToDouble(number_s);
-            double potency = Convert.ToDouble(potency_s);
+            double number;
+            double potency;
+            bool valid_number = double.TryParse(number_s, out number);
+            bool valid_potency = double.TryParse(potency_s, out potency);
+
+            if (!valid_number)
+            {
+                throw new ArgumentException("Invalid number");
+            }
+
+            if (!valid_potency)
+            {
+                throw new ArgumentException("Invalid potency");
+            }
+
+
             if (potency == 0)
             {
                 throw new ArgumentException("0 no puede ser una potencia para una raiz");

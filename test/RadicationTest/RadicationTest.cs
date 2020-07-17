@@ -6,6 +6,17 @@ namespace test
 {
     public class Tests
     {
+        [Test]
+        public void DoRadicacion_With_Invalid_Number_Throws_Argument_Exception()
+        {
+            Assert.That(() => new Radicacion().DoRadicacion("five", "2"), Throws.ArgumentException);
+        }
+
+        [Test]
+        public void DoRadicacion_With_Invalid_potency_Throws_Argument_Exception()
+        {
+            Assert.That(() => new Radicacion().DoRadicacion("5", "two"), Throws.ArgumentException);
+        }
 
         [Test]
         public void DoRadication_With_Valid_Values_Throws_Nothing()
@@ -37,13 +48,6 @@ namespace test
             Assert.That(() => new Radicacion().DoRadicacion("0", "2"), Is.EqualTo(0));
         }
 
-        [Test]
-        public void DoRadicacion_With_BigNumbers_Throws_Argument_Exception()
-        {
-            string number = "999999999999999999999999999";
-
-            Assert.That(() => new Radicacion().DoRadicacion(number, number), Throws.ArgumentException);
-        }
 
 
         [Test]
